@@ -1,0 +1,18 @@
+12. 3 Processes running:
+Django
+
+$ python manage.py runserver
+Celery Worker & Beat (this can be 2 processes)
+
+# celery worker & beat 
+$ celery -A cfehome worker --beat -S django -l info
+
+opt.2 : celery -A djcelbeat beat  -l info   
+redis server
+
+$ redis-server
+
+
+
+HEROKU - CELERY
+>heroku addons:create heroku-redis:hobby-dev -a periodiccelery

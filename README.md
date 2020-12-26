@@ -1,0 +1,1 @@
+App Django with periodic tasks

@@ -57,4 +57,5 @@ docs/_build/
 .pyc
 .DS_Store
 env
+venv/
 
